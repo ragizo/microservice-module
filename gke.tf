@@ -9,7 +9,7 @@ resource "google_container_cluster" "primary" {
   # So we create the smallest possible default
   # node pool and immediatly delete it
   remove_default_node_pool = true
-  initial_node_count       = 1
+  initial_node_count       = 2
 
   default_max_pods_per_node = var.pods_per_node
   enable_shielded_nodes = true
